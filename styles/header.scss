@@ -6,13 +6,13 @@
     background-color: white;
     display: flex;
     align-items: center;
-    padding-left: 15px;
-
+    padding: 15px;
     &__logo {
        
         &_icon {
-            width: 68px;
-            height: 63px;
+            margin-top: 5px;
+            width: 53px;
+            height: 40px;
             
         }
     }
@@ -24,8 +24,11 @@
         height: 100%;
         margin-left: auto;
         background: transparent;
+        margin-right: -15px;
+        // padding-left: 0px;
     }
     &__menu-icon {
+        padding-left:0 ;
         width: 18px;
         height: 13px;
         background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
