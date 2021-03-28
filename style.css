@@ -4,7 +4,7 @@
   background-color: white;
   display: flex;
   align-items: center;
-  padding-left: 15px;
+  margin: auto;
 }
 .header__logo_icon {
   width: 68px;
