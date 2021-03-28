@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    max-width: 100%;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+.block {
+    padding: 10px;
+    display: flex;
+    max-width: 50%;
+    
+    &__img{
+    
+        max-width: 50%;
+    }
+    &__text {
+        margin-left: 10px;
+    }
+}
