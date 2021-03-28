@@ -2,16 +2,19 @@
     max-width: 100%;
     display: flex;
     margin: 30px 0;
+    flex-wrap: wrap;
     &__block{
-        max-width: 100%;
+        max-width: 50%;
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 10px;
+        
        
         &_image{
-            max-width: 50%;
+            max-width: 100%;
         }
         &_text {
             text-align: center;

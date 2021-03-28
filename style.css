@@ -7,9 +7,8 @@
   padding-left: 15px;
 }
 .header__logo_icon {
-  margin-top: 10px;
-  width: 53px;
-  height: 40px;
+  width: 68px;
+  height: 63px;
 }
 .header__menu-button {
   width: 58px;
@@ -30,17 +29,19 @@
   max-width: 100%;
   display: flex;
   margin: 30px 0;
+  flex-wrap: wrap;
 }
 .headline__block {
-  max-width: 100%;
+  max-width: 50%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 .headline__block_image {
-  max-width: 50%;
+  max-width: 100%;
 }
 .headline__block_text {
   text-align: center;
@@ -51,6 +52,7 @@
   max-width: 100%;
   overflow-x: hidden;
   flex-wrap: wrap;
+  display: none;
 }
 
 .block {
