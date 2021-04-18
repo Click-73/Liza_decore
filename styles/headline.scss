@@ -3,8 +3,17 @@
     display: flex;
     margin: 15px 6px;
     flex-wrap: wrap;
+    margin: 0 7%;
+    @include for-large-up {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
     &__block{
-        max-width: 50%;
+        @include for-large-down {
+            max-width: 50%;
+        }
+
         margin: 0;
         padding: 0;
         display: flex;
@@ -12,12 +21,22 @@
         align-items: center;
         padding: 10px;
         padding-right: 13px;
-        
+        @include for-large-up { 
+            margin:  660px auto 0;
+            
+        }
 
        
         &_image{
             width: 100%;
             height: 100%;
+
+            @include for-large-up{
+                height: 200px;
+                width: 200px;
+                margin: 0 auto;
+                border-radius: 20px;
+            }
 
         }
         &_text {

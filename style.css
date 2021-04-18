@@ -32,9 +32,15 @@
   display: flex;
   margin: 15px 6px;
   flex-wrap: wrap;
+  margin: 0 7%;
+}
+@media screen and (min-width: 1200px) {
+  .headline {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 .headline__block {
-  max-width: 50%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -43,9 +49,27 @@
   padding: 10px;
   padding-right: 13px;
 }
+@media screen and (max-width: 1199px) {
+  .headline__block {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .headline__block {
+    margin: 660px auto 0;
+  }
+}
 .headline__block_image {
   width: 100%;
   height: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .headline__block_image {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
 }
 .headline__block_text {
   text-align: center;
@@ -56,7 +80,6 @@
   max-width: 100%;
   overflow-x: hidden;
   flex-wrap: wrap;
-  display: none;
 }
 
 .block {
@@ -65,6 +88,7 @@
   max-width: 50%;
 }
 .block__img {
+  max-height: 100%;
   max-width: 50%;
 }
 .block__text {
@@ -82,6 +106,63 @@ body {
   font-size: 14px;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .top-section__midle {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+.top-section__midle_images {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .top-section__midle_images {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    background-image: url("images/123.jpg");
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .top-section__midle_images-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .top-section__midle_images-button {
+    display: block;
+    margin: auto;
+  }
+  .top-section__midle_images-button-type {
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    z-index: 1;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 6px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+  }
+  .top-section__midle_images-button-type:hover {
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+  }
+  .top-section__midle_images-button-type:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
