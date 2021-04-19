@@ -8,7 +8,21 @@
         max-width: 100%;
         max-height: 100%;
     }
-
+    &__title {
+        display: none;
+        @include for-large-up{
+        display: block;
+        position: absolute;
+        top: 230px ;
+        left: calc(50% - (713px / 2));
+        
+    }
+        &_parag{
+            font-size: 34px;
+            color: gray;
+            text-align: center;
+        }
+    }
     &__block{
         @include for-large-down {
             max-width: 50%;
@@ -45,3 +59,10 @@
     }
 }   
 
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

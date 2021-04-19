@@ -5,17 +5,22 @@
     display: flex;
     align-items: center;
     padding: 15px;
+
+    @include for-large-up {
+        height: 100px;
+    }
     &__logo {
        
         &_icon {
             margin-top: 5px;
-            width: 53px;
-            height: 40px;
+            width: 53px * 2;
+            height: 40px * 2 ;
             
         }
     }
     
     &__menu-button {
+
         width: 58px;
         border: none;
         border-left: 1px solid #00000026;
